@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almarai</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+   @media (min-width:800px){
+    .cur img{
+      height: 600px;
+    }
+   }
+    @media (max-width:800px){
+    .cur img{
+      height: 350px;
+    }
+   }
+   .dishes img{
+    height: 50px;
+    width: 50px;
+   }
+   .food{
+         background-color: #e5f5fc;
+   }
+   .footer{
+    background-color: #192882;
+   }
+   .last{
+    background-color: #121c57;
+   }
+   .logo{
+    height: 40px;
+    width: 80px;
+   }
+   .card1{
+    
+    background-color: #192882;
+   }
+   .out1{
+    border: 1px solid gray;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   .lens{
+          position: absolute;
+          margin-left: 175px;
+          margin-top: 10px;
+   }
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#brands">Brands</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#recipies">Recipies</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#service">Service</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#products">Products</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#connect">Connect</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#products">products</a></li>
+            <li><a class="dropdown-item" href="#brands">brands</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/almarai/">Something else here</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2 rounded-pill me-5 border-dark" type="search" placeholder="Looking for?" aria-label="Search">
+       <i class="fa-solid fa-magnifying-glass lens" style="color: rgb(24, 23, 36);"></i>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleCaptions" class="carousel slide cur ">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/banner4.avif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Cooking Cream</h5>
+        <p>Nutricious cooing cream made with milk.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner3.avif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Mango Juice</h5>
+        <p>Some special incredients include in this mango juice.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner2.avif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Shawai</h5>
+        <p>Try your favourite tasty food.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container-fluid food">
+  <div class="row text-center pt-5">
+     <h3 id="products">Our Products</h3>
+     
+     <div class="cols">Products with a Quality You Can Trust</div>
+     
+  </div>
+  <div class="row mt-5 pb-4">
+    <img src="https://almmedia.almarai.com/HomePageBlock/Our-Product-Categories_1152x212952022101716AM1211202394921AM1022202491525AM.webp" alt="">
+  </div>
+  <div class="row text-center mt-5">
+      <button class="btn-outline-secondary" >Explore More</button>
+  </div>
+</div>
+
+<div class="container-fluid card1 pt-5 pb-5 pe-5 ps-5" id="recipies">
+  <div class="row pt-5 pb-5 ps-3 g-5">
+    <div class="col bord out1 me-5">
+       <img class="pt-4 " src="https://almmedia.almarai.com/Recipes/with-Cream-Cheese1222202565214AM.png" alt="" style="width: 150px; height: 150px;">
+       <h5 class="text-warning pt-4">Smoked Salmon bites with <br> Cream Cheese</h5>
+       <p class="pt-4 pb-4 text-white">Perfect for dinner bites and serving at family gatherings time, these delicious Norwegian Salmon bites are the perfect starting point for an evening and can be ready in just 20 minutes.</p>
+    </div>
+       <div class="col bord out1 me-5">
+       <img class="pt-4 " src="https://almmedia.almarai.com/Recipes/tr728202574722AM.png" alt="" style="width: 150px; height: 150px;">
+       <h5 class="text-warning pt-4">Smoked Salmon bites with <br> Cream Cheese</h5>
+       <p class="pt-4 pb-4 text-white">Perfect for dinner bites and serving at family gatherings time, these delicious Norwegian Salmon bites are the perfect starting point for an evening and can be ready in just 20 minutes.</p>
+    </div>
+        <div class="col bord out1 me-5">
+       <img class="pt-4 " src="https://almmedia.almarai.com/Recipes/Pasta-Salad1222202563649AM.png" alt="" style="width: 150px; height: 150px;">
+       <h5 class="text-warning pt-4">Smoked Salmon bites with <br> Cream Cheese</h5>
+       <p class="pt-4 pb-4 text-white">Perfect for dinner bites and serving at family gatherings time, these delicious Norwegian Salmon bites are the perfect starting point for an evening and can be ready in just 20 minutes.</p>
+    </div>
+        <div class="col bord out1 me-5">
+       <img class="pt-4 " src="https://almmedia.almarai.com/Recipes/tr7102025100009AM.png" alt="" style="width: 150px; height: 150px;">
+       <h5 class="text-warning pt-4">Smoked Salmon bites with <br> Cream Cheese</h5>
+       <p class="pt-4 pb-4 text-white">Perfect for dinner bites and serving at family gatherings time, these delicious Norwegian Salmon bites are the perfect starting point for an evening and can be ready in just 20 minutes.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row text-center pt-5">
+        <h4 id="brands">Our Brands</h4>
+        <p>Brands with a Quality You Can Trust</p>
+  </div>
+  <div class="row pt-3 ps-3 ms-2">
+       <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/evolac-new-logo22202490707AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/Logo_144_Nuralac_Plus920202260320AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/logo_ALYOUM8102022104946AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/logo_7DAYS8102022104630AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/logo_Lusine8102022101322AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/logo_Almarai8102022104604AM-(1)12112023100233AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/Seama-logo822202385416AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/logo412202352232AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/Ice_Leaf_Logo_Image_153x141_Pixel11202025105308AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/Farm_Select10142022111140AM910202485747AM-(1)9162024100856AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/final-surenutri-logo325202492727AM.webp" alt="" style="display: inline-block;">
+       </div>
+        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+           <img src="https://almmedia.almarai.com/Brands/final-suregrow-logo322202471726AM.webp" alt="" style="display: inline-block;">
+       </div>
+        
+  </div>
+  <div class="row pt-5 pb-4 text-center">
+      <h5>All products are ensured.</h5>
+  </div>
+</div>
+
+<div class="container-fluid bg-primary mt-5 text-white pb-4" id="service">
+  <div class="row pt-5 pb-5 g-4">
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <i class="fa-regular fa-truck" style="color: hsl(208, 100%, 99%);"></i>
+      <h1>10,000</h1>
+      <p>The largest food and beverages fleet in the Middle East. Almarai fleet includes more than 10,000 vehicles</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <i class="fa-solid fa-cow" style="color: hsl(208, 100%, 99%);"></i>
+      <h1>4 Million</h1>
+      <p>Almarai produces 4 million liters of milk a day an average of 40 liters per cow per day roughly double the European average</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <i class="fa-solid fa-water" style="color: hsl(208, 100%, 99%);"></i>
+      <h1>39,000</h1>
+      <p>Almarai conducts 39,000 Quality tests per day to ensure a quality you can trust</p>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <i class="fa-solid fa-house" style="color: hsl(208, 100%, 99%);"></i>
+      <h1>220,000</h1>
+      <p>Almarai products reach more than 220,000 points of sale across 7 countries</p>
+    </div>
+
+      
+  </div>
+</div>
+
+<div class="container-fluid text-white footer" id="connect">
+  <div class="row pt-5 pb-5 ps-5 g-3">
+    <div class="col-6 col-sm-4">
+      <h6>FAQs</h6>
+      <h6>Sitemap</h6>
+      <h6>Privacy Policy</h6>
+      <h6>Terms and Conditions</h6>
+      <h6>Contact Us</h6>
+      <h6>Our Locations</h6>
+    </div>
+
+    <div class="col-6 col-sm-4 g-3">
+      <h6>Quick Connect</h6>
+      <p>P. O. Box 8524, Riyadh 11492 <br>
+        Phone : +966 (11) 470 0005 <br>
+         WhatsApp : +966554700101</p>
+    </div>
+
+    <div class="col-6 col-sm-4">
+     <i class="fa-brands fa-facebook" style="color: hsl(208, 100%, 99%);" ></i>
+     <i class="fa-brands fa-instagram" style="color: hsl(208, 100%, 99%);"></i>
+     <i class="fa-brands fa-twitter" style="color: hsl(208, 100%, 99%);"></i> <br>
+     <i class="fa-brands fa-linkedin" style="color: hsl(208, 100%, 99%);"></i>
+     <i class="fa-brands fa-snapchat" style="color: hsl(208, 100%, 99%);"></i>
+     <i class="fa-brands fa-youtube" style="color: hsl(208, 100%, 99%);"></i> <br>
+     <h6 class="mt-3">Connect with</h6>
+     <h6>Social Media</h6>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid last text-secondary">
+  <div class="row text-center pt-2">
+    <p>&copy;All Rights are reserved</p>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
